@@ -1,0 +1,40 @@
+{
+  "name": "open-window-ts",
+  "version": "0.0.1",
+  "description": "Open multiple windows in browser with typed window.open api",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc & npm run-script browserify & npm run-script uglify",
+    "browserify": "browserify lib/index.js --standalone OW -o lib/open-window.js",
+    "uglify": "browserify -g [ uglifyify ] lib/index.js --standalone OW -o lib/open-window.min.js"
+  },
+  "keywords": [
+    "multiple",
+    "windows",
+    "manager",
+    "window",
+    "multi",
+    "react",
+    "typed"
+  ],
+  "author": "morglod",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.4.10",
+    "@types/react-dom": "^16.0.7",
+    "browserify": "^16.2.2",
+    "typescript": "^3.0.1",
+    "uglifyify": "^5.0.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "peerDependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morglod/open-window-ts"
+  }
+}
