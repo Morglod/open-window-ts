@@ -25,6 +25,8 @@ openWindow({
 });
 ```
 
+<!--
+
 <details>
 <summary>
 Example with FigmaApi OAuth
@@ -84,6 +86,8 @@ async function figmaAuth(
 ```
 
 </details>
+
+-->
 
 ## API
 
