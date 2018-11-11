@@ -1,3 +1,5 @@
+[test project]
+
 # open-window-ts
 
 Open multiple windows in browser with typed [window.open api](https://developer.mozilla.org/en-US/docs/Web/API/Window/open).
